@@ -19,9 +19,12 @@ function App() {
           >
             Learn React 3
           </a> */}
+            <h1>THIS IS A DEPLOYED KUBERNETES APP..!</h1>
+        </header>
+        <div>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
-        </header>
+        </div>
         <div>
           <Route exact path="/" component={Fib} />
           <Route path="/otherpage" component={OtherPage} />
