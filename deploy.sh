@@ -1,6 +1,6 @@
 docker build -t jaab30/multi-client:latest -t jaab30/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t jaab30/multi-server:latest -f jaab30/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t jaab30/multi-worker:latest -f jaab30/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t jaab30/multi-server:latest -t jaab30/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t jaab30/multi-worker:latest -t jaab30/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push jaab30/multi-client:latest
 docker push jaab30/multi-client:$SHA
 docker push jaab30/multi-server:latest
